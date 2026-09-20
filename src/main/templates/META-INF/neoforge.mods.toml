@@ -16,7 +16,7 @@ API for MrPup(minecraftkus) mods
 [[dependencies.${mod_id}]]
     modId="neoforge"
     type="required"
-    versionRange="[${neo_version},)"
+    versionRange="[21.1.230,)"
     ordering="NONE"
     side="BOTH"
 

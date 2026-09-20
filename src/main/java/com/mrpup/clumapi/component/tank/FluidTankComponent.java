@@ -85,8 +85,7 @@ public class FluidTankComponent implements IGuiComponent, ISerializableComponent
             Fluid fluid = BuiltInRegistries.FLUID.byId(syncedFluidId);
             if (fluid != Fluids.EMPTY) {
                 float ratio = (float) syncedAmount / getCapacity();
-                int tintColor = IClientFluidTypeExtensions
-                        .of(fluid).getTintColor();
+                int tintColor = IClientFluidTypeExtensions.of(fluid).getTintColor();
 
                 graphics.fill(x + 3, y + 3 + Math.round((getHeight() - 2) * (1 - ratio)),
                         x + getWidth() - 3, y + getHeight() - 3,
