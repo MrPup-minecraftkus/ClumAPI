@@ -19,6 +19,11 @@ public class ItemHelper {
         return BuiltInRegistries.ITEM.get(itemId);
     }
 
+    public static boolean itemExists(String id) {
+        ResourceLocation loc = ResourceLocation.tryParse(id);
+        return loc != null && BuiltInRegistries.ITEM.containsKey(loc);
+    }
+
     public static ResourceLocation getItemKey(Item item) {
         return itemKey = BuiltInRegistries.ITEM.getKey(item);
     }

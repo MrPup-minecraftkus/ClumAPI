@@ -1,3 +1,7 @@
+# Version 1.0.3
+
+- itemExists method in ItemHelper
+
 # Version 1.0.2
 
 - getItemFromString method in ItemHelper
