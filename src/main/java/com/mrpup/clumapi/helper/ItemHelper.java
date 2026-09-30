@@ -14,6 +14,11 @@ public class ItemHelper {
         return item = BuiltInRegistries.ITEM.get(loc);
     }
 
+    public static Item getItemFromString(String loc) {
+        ResourceLocation itemId = ResourceLocation.parse(loc);
+        return BuiltInRegistries.ITEM.get(itemId);
+    }
+
     public static ResourceLocation getItemKey(Item item) {
         return itemKey = BuiltInRegistries.ITEM.getKey(item);
     }
